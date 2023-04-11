@@ -1,33 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
- 
-    <title>Document</title>
-</head>
-<body>
-    <header class="" >
-        <div class="px-4 bg-slate-100 flex border-b h-16 items-center border-black">
-        <h2 class="text-base px-5">YOURCOMPANYNAME</h2>
-    </div>
-   
-    <nav class=" flex h-14 items-center bg-[#8b8e8f] gap-7 px-8  ">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Servis</a>
-        <a href="">testimonials</a>
-        <a href="">  Portfolio </a>
-        <a href=""> contacts </a>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<title>Document</title>
+	</head>
+	<body class="bg-[#ffffff]">
+		
+		<header class="header">
+			<div class="px-4 flex border-b h-16 items-center border-black">
+				<h2 class="text-base px-5">YOURCOMPANYNAME</h2>
+			</div>
+			<nav
+				class="flex flex-col lg:flex-row text-white items-center justify-between lg:items-stretch bg-gray-400 p-4"
+			>
+				<div class="flex flex-col lg:flex-row lg:gap-8">
+					<a href="#" class="py-2 lg:py-0">Home</a>
+					<a href="#" class="py-2 lg:py-0">About</a>
+					<a href="#" class="py-2 lg:py-0">Services</a>
+					<a href="#" class="py-2 lg:py-0">Testimonials</a>
+					<a href="#" class="py-2 lg:py-0">Portfolio</a>
+					<a href="#" class="py-2 lg:py-0">Contacts</a>
+				</div>
+			</nav>
 
-
-    <div class="lg:h-[37em] h-[32em] bg-[#babdbf]  flex justify-end items-end">
-        <div class="mr-[7%] text-center mb-40 text-3xl">
-        <h2>WELCOME TO <br> <span class="text-orange-500">YOURCOMPANYNAME</span> </h2></div>
-    </div>
-     </header>
-</body>
+			<div class="lg:h-[37em] h-[32em] bg-[#babdbf] flex justify-end items-end">
+				<div class="mr-[7%] text-center px-3 mb-40 text-3xl">
+					<h2 class="text-5xl font-serif text-white">
+						WELCOME TO <br />
+						<span class="text-3xl text-orange-500">YOURCOMPANYNAME</span>
+					</h2>
+				</div>
+			</div>
+		</header>
+		
+			<section class="h-[100%] flex border-b border-black flex-col">
+				<div class="flex flex-col justify-center items-center">
+					<div class="mt-[20vh] text-center">
+                        <h2 class="text-5xl text-orange-600 border-b-2 inline-block pb-3">
+                          OUR TEAM LEADERS
+                        </h2>
+                      </div>
+                      <div class="w-full md:w-1/2 px-4 mt-4 md:text-center mx-auto">
+                        <p class="text-lg">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat.
+                        </p>
+                      </div>
+                     </div>  
+                     <div class="flex flex-col mt-16 mb-[6em]  text-center md:flex-row md:justify-center md:items-start md:gap-7 ">
+                        <div class="flex flex-col items-center justify-center mb-10 md:mb-0">
+                          <div class="h-[370px] bg-[#c1c8cc] w-[300px]">
+                            <p>Контент блоку 1</p>
+                          </div>
+                          <div class="w-2/3  mt-10">
+                            <h2>Hugo Silva</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quasi!</p>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center mb-10 md:mb-0">
+                          <div class="h-[370px] bg-[#c1c8cc] w-[300px]">
+                            <p>Контент блоку 1</p>
+                          </div>
+                          <div class="w-2/3  mt-10">
+                            <h2>Hugo Silva</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quasi!</p>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center mb-10 md:mb-0">
+                          <div class="h-[370px] bg-[#c1c8cc] w-[300px]">
+                            <p>Контент блоку 1</p>
+                          </div>
+                          <div class="w-2/3 mt-10">
+                            <h2>Hugo Silva</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, quasi!</p>
+                          </div>
+                        </div>
+                      </div>
+				</div>
+                
+			</section>
+            <section class="flex flex-col items-center bg-[#1b2a31]">
+                <div class="flex justify-start h-[10em] items-center mt-5 ">
+                  <ul class="text-4xl flex text-center justify-between gap-4 sm:gap-8 md:gap-16">
+                    <li class="text-[#995437] text-6vw sm:text-5vw md:text-4vw">2500 <br> <span class="text-sm text-white">happy clients</span></li>
+                    <li class="text-[#995437] text-6vw sm:text-5vw md:text-4vw">300 <br> <span class="text-sm text-white"> FULL NOTEBOOKS </span></li>
+                    <li class="text-[#995437] text-6vw sm:text-5vw md:text-4vw">120 <br> <span class="text-sm text-white">FULL NOTEBOOKS </span></li>
+                    <li class="text-[#995437] text-6vw sm:text-5vw md:text-4vw">30 <br> <span class="text-sm text-white">stores</span></li>
+                  </ul>
+                </div>
+              </section>
+              <section class= "h-screen  bg-[#233740] text-gray-600 body-font">
+                <div class="container max-w-screen-md px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="text-white sm:text-3xl text-2xl font-medium title-font mb-4 ">CONTACT US</h1>
+                    <p class="lg:w-2/3 mx-auto text-slate-700 leading-relaxed text-base">Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br>
+                    accusantium doloremque laudantium, totam rem aperiam</p>
+                  </div>
+                  <div class="flex lg:w-2/3 flex-row  mx-auto gap-8 sm:px-0">
+                    <div class="relative  w-full z-0 mb-6 ">
+                      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                    <div class="relative w-full z-0 group">
+                      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                  </div>
+                  <div class="flex lg:w-2/3 flex-row  mx-auto gap-8 sm:px-0">
+                    <div class="relative  w-full z-0 mb-6 ">
+                      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                    <div class="relative w-full z-0 group">
+                      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                  </div>
+                  <div class="flex lg:w-2/3 flex-col  mx-auto  sm:px-0">
+                    <div class="relative  w-full z-0 mb-6 ">
+                      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                    </div>
+                    <div class="relative">
+                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                        <textarea id="message" name="message" class="block w-full px-4 py-2 mt-2 text-base text-gray-700 placeholder-gray-600 border rounded-lg appearance-none focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"></textarea>
+                      </div>
+                      
+                  </div>
+                  <div class="flex justify-end mt-6 text-white items-end">
+                    <button class=" w-[20%] h-[3em] bg-[#89553b]">Contact us</button></div>
+                  
+                </div>
+              </section>
+              
+              
+              
+              
+              <section class="text-gray-600 bg-[#f9f9fb] body-font">
+                <div class="container px-5 justify-center items-center py-24 gap-8 mx-auto flex flex-wrap">
+                  <div class="lg:w-1/3 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                    <img alt="feature" class="object-cover object-center w-full h-full" src="https://dummyimage.com/460x500">
+                  </div>
+                  <div class="w-full lg:w-1/2  px-4 h-auto lg:h-[10em] flex justify-center items-center">
+                    <div class="mx-2 border ">
+                      <div class="text-center px-4 lg:px-16">
+                        <h2 class="text-4xl lg:text-5xl mb-3">About US</h2>
+                        <p class="text-sm lg:text-base">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                      </div>
+                      <div class="flex justify-around mb-5 lg:mt-8">
+                        <div class="flex flex-col mx-1 items-center">
+                          <div class="w-12 h-12 lg:w-20 lg:h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                          </div>
+                          <div class="w-1 h-5 bg-black mx-auto"></div>
+                          <div class="bg-white border h-12 w-[13em] flex items-center text-center text-xs lg:text-base py-2 px-3 lg:px-6 border-black shadow-md">
+                            <p class="mx-auto text-lg lg:text-xl">Friendly team</p>
+                          </div>
+                        </div>
+                        <div class="flex flex-col mx-1 items-center">
+                          <div class="w-12 h-12 lg:w-20 lg:h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                          </div>
+                          <div class="w-1 h-5 bg-black mx-auto"></div>
+                          <div class="bg-white border h-12 w-[13em] flex items-center text-center text-xs lg:text-base py-2 px-3 lg:px-6 border-black shadow-md">
+                            <p class="mx-auto text-lg lg:text-xl">Involved</p>
+                          </div>
+                        </div>
+                        <div class="flex flex-col mx-1 items-center">
+                          <div class="w-12 h-12 lg:w-20 lg:h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                          </div>
+                          <div class="w-1 h-5 bg-black mx-auto"></div>
+                          <div class="bg-white border h-12 w-[13em] flex items-center text-center text-xs lg:text-base py-2 px-3 lg:px-6 border-black shadow-md">
+                            <p class="mx-auto text-center text-lg lg:text-xl">24/7 Assistance</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+            
+		
+	</body>
 </html>

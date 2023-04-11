@@ -1,5 +1,5 @@
 {
-  "name": "Form",
+  "name": "Mac",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,19 +7,23 @@
     "start": "npx tailwindcss -i ./input.css -o ./css/style.css --watch",
     "build": "npm run build:css && npm run build:js",
     "build:css": "postcss css/style.css -o public/build/tailwind.css",
-    "build:js": "webpack"
+    "build:js": "webpack",
+    "go": "postcss css/style.css -o dist/css/style.css --env production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@tailwindcss/forms": "^0.5.3",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^8.3.1",
     "tailwind-scrollbar": "^3.0.0",
     "tailwindcss": "^3.2.7",
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "postcss-cli": "^10.1.0",
+    "autoprefixer": "^10.4.14",
     "webpack": "^5.64.4"
   }
 }
